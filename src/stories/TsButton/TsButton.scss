@@ -1,0 +1,172 @@
+.ts-btn {
+  border: 1px solid transparent;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+  padding-inline: 0.8rem;
+  padding-block: 0.6rem;
+  letter-spacing: 1px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: none;
+  }
+}
+
+.small {
+  padding-inline: 0.6rem;
+  padding-block: 0.4rem;
+  font-size: 0.8rem;
+}
+
+.medium {
+  padding-inline: 1rem;
+  padding-block: 0.6rem;
+  font-size: 1rem;
+}
+
+.large {
+  padding-inline: 1.1rem;
+  padding-block: 0.7rem;
+  font-size: 1.2rem;
+}
+
+.soft {
+  border-radius: 8px;
+}
+
+.pill {
+  border-radius: 3rem;
+
+  &.medium {
+    padding-inline: 1.2rem;
+    padding-block: 0.4rem;
+    font-size: 1rem;
+  }
+
+  &.small {
+    padding-inline: 1rem;
+    padding-block: 0.4rem;
+    font-size: 0.8rem;
+  }
+
+  &.large {
+    padding-inline: 1.3rem;
+    padding-block: 0.6rem;
+    font-size: 1.1rem;
+  }
+}
+
+.solid {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.outline {
+  background-color: transparent;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.solid.information {
+  background-color: var(--bg-solid-information);
+  color: var(--tc-solid-dark);
+
+  &:hover {
+    background-color: color-mix(in oklab, var(--bg-solid-information) 80%, black 20%);
+  }
+}
+
+.solid.warning {
+  background-color: var(--bg-solid-warning);
+  color: var(--tc-solid-dark);
+
+  &:hover {
+    background-color: color-mix(in oklab, var(--bg-solid-warning) 80%, black 20%);
+  }
+}
+
+.solid.danger {
+  background-color: var(--bg-solid-danger);
+  color: var(--tc-solid-dark);
+
+  &:hover {
+    background-color: color-mix(in oklab, var(--bg-solid-danger) 80%, black 20%);
+  }
+}
+
+.solid.success {
+  background-color: var(--bg-solid-success);
+  color: var(--tc-solid-dark);
+
+  &:hover {
+    background-color: color-mix(in oklab, var(--bg-solid-success) 80%, black 20%);
+  }
+}
+
+.solid.error {
+  background-color: var(--bg-solid-error);
+  color: var(--tc-solid-dark);
+
+  &:hover {
+    background-color: color-mix(in oklab, var(--bg-solid-error) 80%, black 20%);
+  }
+}
+
+.solid.muted {
+  background-color: var(--bg-solid-muted);
+  color: #A9A9A9;
+}
+
+.outline.information {
+  border: 1px solid var(--bg-solid-information);
+  color: var(--tc-solid-light);
+
+  &:hover {
+    box-shadow: var(--bg-solid-information) var(--outline-box-shadow), var(--bg-solid-information) var(--outline-box-shadow);
+  }
+}
+
+.outline.warning {
+  border: 1px solid var(--bg-solid-warning);
+  color: var(--tc-solid-light);
+
+  &:hover {
+    box-shadow: var(--bg-solid-warning) var(--outline-box-shadow), var(--bg-solid-warning) var(--outline-box-shadow);
+  }
+}
+
+.outline.danger {
+  border: 1px solid var(--bg-solid-danger);
+  color: var(--tc-solid-light);
+
+  &:hover {
+    box-shadow: var(--bg-solid-danger) var(--outline-box-shadow), var(--bg-solid-danger) var(--outline-box-shadow);
+  }
+}
+
+.outline.success {
+  border: 1px solid var(--bg-solid-success);
+  color: var(--tc-solid-light);
+
+  &:hover {
+    box-shadow: var(--bg-solid-success) var(--outline-box-shadow), var(--bg-solid-success) var(--outline-box-shadow);
+  }
+}
+
+.outline.error {
+  border: 1px solid var(--bg-solid-error);
+  color: var(--tc-solid-light);
+
+  &:hover {
+    box-shadow: var(--bg-solid-error) var(--outline-box-shadow), var(--bg-solid-error) var(--outline-box-shadow);
+  }
+}
+
+.outline.muted {
+  border: 1px solid var(--bg-solid-muted);
+  color: #A9A9A9;
+}

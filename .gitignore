@@ -2,3 +2,4 @@
 .idea/
 .vite/
 node_modules/
+*storybook.log

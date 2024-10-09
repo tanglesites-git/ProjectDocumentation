@@ -1,0 +1,55 @@
+@use 'sass:list';
+
+.button {
+  display: inline-block;
+  cursor: pointer;
+  border: 0;
+  font-weight: 700;
+  line-height: 1;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+$button_types: (
+  primary: #1ea7fd white,
+  secondary: transparent #333
+);
+
+$button_sizes: (
+  small: 10px 16px 12px,
+  medium: 11px 20px 14px,
+  large: 12px 24px 16px
+);
+
+@each $key, $value in $button_types {
+  @if($key == secondary) {
+    .#{$key} {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+    background-color: list.nth($list: $value, $n: 1);
+    color: list.nth($list: $value, $n: 2);
+    }
+  }
+
+  .#{$key} {
+    background-color: list.nth($list: $value, $n: 1);
+    color: list.nth($list: $value, $n: 2);
+  }
+};
+
+@each $key, $value in $button_sizes {
+  .#{$key} {
+    padding: list.nth($list: $value, $n: 1) list.nth($list: $value, $n: 2);
+    font-size: list.nth($list: $value, $n: 3);
+  }
+};
+
+.square {
+  border-radius: 0px;
+}
+
+.rounded {
+  border-radius: 8px;
+}
+
+.pill {
+  border-radius: 3em;
+}
